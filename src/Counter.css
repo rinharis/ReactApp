@@ -1,0 +1,49 @@
+.main-header {
+    background-color: #eee;
+    padding: 30px;
+}
+
+#main-header-title {
+    font-size: 15px;
+}
+
+.main-header>ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.main-header>ul>li {
+    /* outline: none;
+    text-decoration: none; */
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.main-div {
+    width: 100%;
+}
+
+.counter-parent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.counter-parent h3 {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.counter-parent button {
+    background: transparent;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin-top: 10px;
+}
