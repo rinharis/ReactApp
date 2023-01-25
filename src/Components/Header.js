@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Header(props) {
-    let menuitems = ["Home", "Counter", "About"];
+    let menuitems = ["Home", "Applications", "About"];
     return (
         <>
             <div className="main-header">
@@ -10,7 +10,7 @@ function Header(props) {
                     <Link to='/'>
                         <li>{menuitems[0]}</li>
                     </Link>
-                    <Link to= '/counter'>
+                    <Link to= '/appli'>
                         <li>{menuitems[1]}</li>
                     </Link>
                     <Link to='/about'>
