@@ -1,20 +1,24 @@
 import React from "react";
-import './App.css';
-import "./Counter.css";
+import './css/App.css';
+import "./css/Counter.css";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
-import Counter from "./Components/Counter";
 import Errorpage from "./Components/Errorpage";
 import Calculator from "./Components/Calculator";
+import Counter from "./Components/Counter";
 import Pokemon from "./Components/Pokemon";
+import Applications from "./Components/Applications";
+import Temperature from "./Components/Temperature";
+import SearchFilter from "./Components/SearchFilter";
 
 function App() {
     return (
         <>
             <div className="main">
                 <Routes>
+                    {/* Home */}
                     <Route
                         path="/"
                         element={
@@ -24,15 +28,67 @@ function App() {
                             </>
                         }
                     />
+                    {/* Applications */}
                     <Route
-                        path="/counter"
+                        path="/appli"
                         element={
                             <>
                                 <Header />
+                                <Applications />
+                            </>
+                        }
+                    />
+                     <Route
+                        path="/appli/calculator"
+                        element={
+                            <>
+                                <Header />
+                                <Applications />
+                                <Calculator />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/appli/pokemon"
+                        element={
+                            <>
+                                <Header />
+                                <Applications />
+                                <Pokemon />
+                            </>
+                        }
+                    />
+                     <Route
+                        path="/appli/counter"
+                        element={
+                            <>
+                                <Header />
+                                <Applications />
                                 <Counter />
                             </>
                         }
                     />
+                    <Route
+                        path="/appli/temperature"
+                        element={
+                            <>                                
+                                <Header />
+                                <Applications />
+                                <Temperature />
+                            </>
+                        }
+                    />
+                     <Route
+                        path="/appli/searchFilter"
+                        element={
+                            <>                                
+                                <Header />
+                                <Applications />
+                                <SearchFilter />
+                            </>
+                        }
+                    />
+                    {/* About */}
                     <Route
                         path="/about"
                         element={
@@ -42,22 +98,7 @@ function App() {
                             </>
                         }
                     />
-                    <Route
-                        path="/calculator"
-                        element={
-                            <>
-                                <Calculator />
-                            </>
-                        }
-                    />
-                    <Route
-                        path="/pokemon"
-                        element={
-                            <>
-                                <Pokemon />
-                            </>
-                        }
-                    />
+                   {/* Error */}
                     <Route
                         path='*'
                         element={
