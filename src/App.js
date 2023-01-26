@@ -12,6 +12,7 @@ import Pokemon from "./Components/Pokemon";
 import Applications from "./Components/Applications";
 import Temperature from "./Components/Temperature";
 import SearchFilter from "./Components/SearchFilter";
+import Registration from "./Components/Registration";
 
 function App() {
     return (
@@ -88,6 +89,16 @@ function App() {
                             </>
                         }
                     />
+                    <Route
+                       path="/appli/registration"
+                       element={
+                           <>                                
+                               <Header />
+                               <Applications />
+                               <Registration />
+                           </>
+                       }
+                   />
                     {/* About */}
                     <Route
                         path="/about"

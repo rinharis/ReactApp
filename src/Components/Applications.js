@@ -22,6 +22,9 @@ const Applications = () => {
             <Link to= '/appli/searchFilter'>
                 <button>Search filter</button>
             </Link>
+            <Link to= '/appli/registration'>
+                <button>Registration</button>
+            </Link>
         </>
     )
 }
