@@ -13,6 +13,7 @@ import Applications from "./Components/Applications";
 import Temperature from "./Components/Temperature";
 import SearchFilter from "./Components/SearchFilter";
 import Registration from "./Components/Registration";
+import Quiz from "./Components/Quiz";
 
 function App() {
     return (
@@ -96,6 +97,16 @@ function App() {
                                <Header />
                                <Applications />
                                <Registration />
+                           </>
+                       }
+                   />
+                   <Route
+                       path="/appli/quiz"
+                       element={
+                           <>                                
+                               <Header />
+                               <Applications />
+                               <Quiz />
                            </>
                        }
                    />
