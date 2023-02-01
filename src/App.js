@@ -14,6 +14,7 @@ import Temperature from "./Components/Temperature";
 import SearchFilter from "./Components/SearchFilter";
 import Registration from "./Components/Registration";
 import Quiz from "./Components/Quiz";
+import TodoApp from "./Components/TodoAppli/TodoApp";
 
 function App() {
     return (
@@ -107,6 +108,16 @@ function App() {
                                <Header />
                                <Applications />
                                <Quiz />
+                           </>
+                       }
+                   />
+                   <Route
+                       path="/appli/todoApp"
+                       element={
+                           <>                                
+                               <Header />
+                               <Applications />
+                               <TodoApp />
                            </>
                        }
                    />

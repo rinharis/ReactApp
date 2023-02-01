@@ -11,11 +11,11 @@ function SearchFilter() {
                 setSearchTerm(event.target.value)
             }} />
             {JSONDATA.filter((val) => {
-                if (searchTerm == "")
+                if (searchTerm === "")
                     return val;
                 else if (val.first_name.toLowerCase().includes(searchTerm.toLowerCase()))
                     return val;
-                else return;
+                // else return;
             }).map((val, key) => {
                 return (
                     <div className="user" key={key}>
