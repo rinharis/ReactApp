@@ -29,6 +29,9 @@ const Applications = () => {
                 <Link to='/appli/quiz'>
                     <button className='application-button'>Quiz</button>
                 </Link>
+                <Link to='/appli/todoApp'>
+                    <button className='application-button'>Todo App</button>
+                </Link>
             </div>
         </>
     )
