@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import './css/App.css';
-import "./css/Counter.css";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Header from "./Components/Header";
@@ -17,6 +16,9 @@ import Quiz from "./Components/Quiz";
 import TodoApp from "./Components/TodoApp/TodoApp";
 import CalculatorV2 from "./Components/CalculatorApp/V2/CalculatorV2";
 import ContactListApp from "./Components/ContactListApp/ContactListApp";
+import RecipeApp from "./Components/RecipeApp/RecipeApp";
+import ListApp from "./Components/ListApp/ListApp";
+import WeatherApp from "./Components/WeatherApp/WeatherApp";
 
 function App() {
     return (
@@ -133,6 +135,16 @@ function App() {
                            </>
                        }
                    />
+                   <Route
+                       path="/appli/list"
+                       element={
+                           <>                                
+                               <Header />
+                               <Applications />
+                               <ListApp />
+                           </>
+                       }
+                   />
                     <Route
                        path="/appli/contact"
                        element={
@@ -140,6 +152,26 @@ function App() {
                                <Header />
                                <Applications />
                                <ContactListApp />
+                           </>
+                       }
+                   />
+                   <Route
+                       path="/appli/recipe"
+                       element={
+                           <>                                
+                               <Header />
+                               <Applications />
+                               <RecipeApp />
+                           </>
+                       }
+                   />
+                    <Route
+                       path="/appli/weather"
+                       element={
+                           <>                                
+                               <Header />
+                               <Applications />
+                               <WeatherApp />
                            </>
                        }
                    />

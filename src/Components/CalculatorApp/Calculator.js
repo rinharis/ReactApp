@@ -20,7 +20,7 @@ function Calculator() {
     return (
         <>
             <div className="calc">
-                <input type="text" placeholder="0" id="answer" value={result} />
+                <input type="text"  id="answer" placeholder={result} />
                 <input type="button" value="7" className="button" onClick={clickhandler} />
                 <input type="button" value="8" className="button" onClick={clickhandler} />
                 <input type="button" value="9" className="button" onClick={clickhandler} />

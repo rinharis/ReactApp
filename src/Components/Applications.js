@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from "react-router-dom";
+import "../css/Applications.css";
 
 const Applications = () => {
     const navigate = useNavigate()
@@ -8,7 +9,10 @@ const Applications = () => {
     }
     return (
         <>
-            <p>List of Applications</p>
+            <p>Select an application</p>
+            <p>
+                TODO : on click, hide the text above, highlight clicked app
+            </p>
             <div className='application'>
                 <button onClick={handleclick} className='application-button'>Calculator</button>
                 <Link to='/appli/calculatorV2'>
@@ -33,10 +37,19 @@ const Applications = () => {
                     <button className='application-button'>Quiz</button>
                 </Link>
                 <Link to='/appli/todo'>
-                    <button className='application-button'>Todo List</button>
+                    <button className='application-button'>Todos</button>
+                </Link>
+                <Link to='/appli/list'>
+                    <button className='application-button'>List</button>
                 </Link>
                 <Link to='/appli/contact'>
-                    <button className='application-button'>Contact list</button>
+                    <button className='application-button'>Contacts</button>
+                </Link>
+                <Link to='/appli/recipe'>
+                    <button className='application-button'>Recipes</button>
+                </Link>
+                <Link to='/appli/weather'>
+                    <button className='application-button'>Weather</button>
                 </Link>
             </div>
         </>
