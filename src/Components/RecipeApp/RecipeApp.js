@@ -21,7 +21,7 @@ const RecipeApp = () => {
         // console.log(data.hits);
     }
 
-    const updateSearch = e => {
+    const updateSearch = (e) => {
         setSearch(e.target.value);
     }
 
@@ -37,7 +37,7 @@ const RecipeApp = () => {
                 <ul>
                     <p>Recipe App with edamam.com</p>
                     <input
-                        onChange={() => updateSearch()}
+                        onChange={updateSearch}
                         value={search}
                         className='search-bar'
                         type="text"
