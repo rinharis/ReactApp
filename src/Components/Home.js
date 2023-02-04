@@ -2,10 +2,11 @@ import React from "react";
 import Hello from "./Hello";
 
 function Home() {
+    const fakeName = "Guy";
+    const currentPage = "Home";
     return (
         <>
-            <p>This is home page</p>
-            <Hello name="Rin" />
+            <Hello name={fakeName} page={currentPage} />
         </>
     )
 }

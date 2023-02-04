@@ -32,14 +32,14 @@ function Registration() {
     const [valid, setValid] = useState(false);
 
     return (
-        <div class="form-container">
-            <form class="register-form" onSubmit={handleSubmit}>
-                {submitted && valid? <div class="success-message">Success! Thank you for registering</div> : null}
+        <div className="form-container">
+            <form className="register-form" onSubmit={handleSubmit}>
+                {submitted && valid? <div className="success-message">Success! Thank you for registering</div> : null}
                 <input
                     onChange={handleFirstNameInputChange}
                     value={values.firstName}
                     id="first-name"
-                    class="form-field"
+                    className="form-field"
                     type="text"
                     placeholder="First Name"
                     name="firstName"
@@ -49,7 +49,7 @@ function Registration() {
                     onChange={handleLastNameInputChange}
                     value={values.lastName}
                     id="last-name"
-                    class="form-field"
+                    className="form-field"
                     type="text"
                     placeholder="Last Name"
                     name="lastName"
@@ -59,13 +59,13 @@ function Registration() {
                     onChange={handleEmailInputChange}
                     value={values.email}
                     id="email"
-                    class="form-field"
+                    className="form-field"
                     type="text"
                     placeholder="Email"
                     name="email"
                 />
                 {submitted && !values.email? <span id="email-error">Please enter an email address</span> : null}
-                <button class="form-field" type="submit">Register</button>
+                <button className="form-field" type="submit">Register</button>
             </form>
         </div>
     );

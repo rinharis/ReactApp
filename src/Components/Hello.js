@@ -1,13 +1,8 @@
 import React from "react";
 
-const here = "home";
-
 function Hello(props) {
-
     return (
-        <div className="main-header">
-            <h2 id="main-header-title">{`Hello ${props.name}, welcome ${here}!`}</h2>
-        </div>
+            <p>{`Hello ${props.name}, welcome ${props.page}!`}</p>
     )
 }
 export default Hello;

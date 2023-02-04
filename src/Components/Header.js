@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../css/Header.css";
 
 function Header(props) {
-    let menuitems = ["Home", "Applications", "About"];
+    const menuitems = ["Home", "Applications", "About"];
     return (
         <>
             <div className="main-header">

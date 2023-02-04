@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Todo from './Todo';
 
-
 const TodoList = ({ todos, setTodos, filteredTodos }) => {
     return (
         <div className="todo-container">
