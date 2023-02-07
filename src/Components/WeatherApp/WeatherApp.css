@@ -9,7 +9,7 @@
     background-image: url('../../assets/cold-bg.jpg');
     background-size: cover;
     background-position: bottom;
-    transition: 0.4 ease-out;
+    transition: 0.4 ease;
 }
 
 .WeatherApp.warm {
