@@ -5,10 +5,6 @@ import { useState } from "react";
 function Counter() {
     let count = 0;
 
-    // useEffect(() => {
-    //     window.alert('Counter() called');
-    // })
-
     const [currentstate, updatedstate] = useState(count);
     const handleclick = () => {
         updatedstate(currentstate + 1);

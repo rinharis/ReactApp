@@ -6,14 +6,14 @@
 
 .WeatherApp {
     font-family: 'montseratt', sans-serif;
-    background-image: url('../../assets/cold-bg.jpg');
+    background-image: url('../../assets/images/weather-app/cold-bg.jpg');
     background-size: cover;
     background-position: bottom;
     transition: 0.4 ease;
 }
 
 .WeatherApp.warm {
-    background-image: url('../../assets/warm-bg.jpg');
+    background-image: url('../../assets//images/weather-app/warm-bg.jpg');
 }
 
 main {

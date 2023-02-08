@@ -12,15 +12,16 @@ const WeatherApp = () => {
     const [weather, setWeather] = useState({});
 
     const search = evt => {
-        if (evt.key = "Enter") {
-            console.log(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`);
-            fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
-                .then(res => res.json())
-                .then(result => {
-                    setWeather(result);
-                    setQuery('');
-                });
-        }
+        alert("search: " + evt.key)
+        // if (evt.key = "Enter") {
+        //     console.log(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`);
+        //     fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+        //         .then(res => res.json())
+        //         .then(result => {
+        //             setWeather(result);
+        //             setQuery('');
+        //         });
+        // }
     }
 
     const dateBuilder = (d) => {
