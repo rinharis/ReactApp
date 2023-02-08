@@ -51,6 +51,9 @@ const Applications = () => {
                 <Link to='/appli/weather'>
                     <button className='application-button'>Weather</button>
                 </Link>
+                <Link to='/appli/advice'>
+                    <button className='application-button'>Advice</button>
+                </Link>
             </div>
         </>
     )
