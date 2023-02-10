@@ -20,6 +20,7 @@ import RecipeApp from "./Components/RecipeApp/RecipeApp";
 import ListApp from "./Components/ListApp/ListApp";
 import WeatherApp from "./Components/WeatherApp/WeatherApp";
 import AdviceApp from "./Components/AdviceApp/AdviceApp";
+import NotesApp from "./Components/NotesApp/NotesApp";
 
 function App() {
     return (
@@ -44,6 +45,7 @@ function App() {
                     <Route path="/appli/recipe"         element={<><Header /><Applications /><RecipeApp /></>} />
                     <Route path="/appli/weather"        element={<><Header /><Applications /><WeatherApp /></>} />
                     <Route path="/appli/advice"         element={<><Header /><Applications /><AdviceApp /></>} />
+                    <Route path="/appli/notes"         element={<><Header /><Applications /><NotesApp /></>} />
                     {/* About */}
                     <Route path="/about"                element={<><Header /><About /></>} />
                     {/* Error */}
