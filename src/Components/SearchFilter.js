@@ -6,7 +6,7 @@ import { useState } from "react";
 function SearchFilter() {
     const [searchTerm, setSearchTerm] = useState('');
     return (
-        <div className="search">
+        <div className="searchApp">
             <input type="text" placeholder="Search ..." onChange={event => {
                 setSearchTerm(event.target.value)
             }} />
